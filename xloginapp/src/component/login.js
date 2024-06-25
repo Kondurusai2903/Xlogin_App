@@ -24,6 +24,7 @@ const Login = () => {
       setError("showerror");
     }
   };
+  console.log(userdetails);
   return (
     <div>
       <h1>Login Page</h1>
@@ -63,28 +64,25 @@ const Login = () => {
       ) : (
         <form onSubmit={(e) => handleSubmit(e)}>
           <div>
-            <label>
-              Username:
-              <input
-                type="text"
-                name="username"
-                value={userdetails.username}
-                onChange={(e) => handlechange(e)}
-                required
-              />
-            </label>
+            <label>Username:</label>
+
+            <input
+              type="text"
+              name="username"
+              value={userdetails.username}
+              onChange={(e) => handlechange(e)}
+              required
+            />
           </div>
           <div>
-            <label>
-              Password:
-              <input
-                type="password"
-                name="password"
-                value={userdetails.password}
-                onChange={(e) => handlechange(e)}
-                required
-              />
-            </label>
+            <label>Password:</label>
+            <input
+              type="password"
+              name="password"
+              value={userdetails.password}
+              onChange={(e) => handlechange(e)}
+              required
+            />
           </div>
           <button>Submit</button>
         </form>
