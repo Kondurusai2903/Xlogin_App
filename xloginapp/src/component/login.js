@@ -29,7 +29,7 @@ const Login = () => {
     <div>
       <h1>Login Page</h1>
       {error === "show" ? (
-        <p>Welcome , user!</p>
+        <p>Welcome , user</p>
       ) : error === "showerror" ? (
         <div>
           <p>Invalid username and password</p>
