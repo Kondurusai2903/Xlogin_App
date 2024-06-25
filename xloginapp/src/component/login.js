@@ -68,7 +68,7 @@ const Login = () => {
               <input
                 type="text"
                 name="username"
-                value={userdetails.username || ""}
+                value={userdetails.username}
                 onChange={(e) => handlechange(e)}
                 required
               />
@@ -80,7 +80,7 @@ const Login = () => {
               <input
                 type="password"
                 name="password"
-                value={userdetails.password || ""}
+                value={userdetails.password}
                 onChange={(e) => handlechange(e)}
                 required
               />
